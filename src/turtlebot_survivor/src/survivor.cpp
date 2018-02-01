@@ -221,14 +221,8 @@ private:
         geometry_msgs::TwistPtr cmd(new geometry_msgs::Twist());
         // Only move to get centroid to goal_z_ if the actual centroid z is *too close*.
         //    If it's too far, no linear motion.
-        if(z < goal_z_)
-        {
-          cmd->linear.x = (z - goal_z_) * z_scale_;
-        }
-        else
-        {
-          cmd->linear.y = 0.0;
-        }
+        if(z < goal_z_)   cmd->linear.x = (z - goal_z_) * z_scale_;
+        else              cmd->linear.y = 0.0;
         cmd->angular.z = -x * x_scale_;
         cmdpub_.publish(cmd);
       }
@@ -248,7 +242,7 @@ private:
       if (enabled_)
       {
         geometry_msgs::TwistPtr cmd(new geometry_msgs::Twist());
-        cmd->angular.z = 1.5 * x_scale_;
+        cmd->angular.z = 0.5 * x_scale_;
         cmdpub_.publish(cmd);
       }
     }
