@@ -1,0 +1,2 @@
+turtlebot_follower:turtlebot_survivor
+-DCATKIN_DEVEL_PREFIX=/home/turtlebot/andi_ws/devel -DCMAKE_INSTALL_PREFIX=/home/turtlebot/andi_ws/install -G Unix Makefiles

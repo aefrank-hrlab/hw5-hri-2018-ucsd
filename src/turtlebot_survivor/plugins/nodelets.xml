@@ -1,0 +1,7 @@
+<library path="lib/libturtlebot_survivor">
+  <class name="turtlebot_survivor/TurtlebotSurvivor" type="turtlebot_survivor::TurtlebotSurvivor" base_class_type="nodelet::Nodelet">
+    <description>
+      The turtlebot survivor node.
+    </description>
+  </class>
+</library> 

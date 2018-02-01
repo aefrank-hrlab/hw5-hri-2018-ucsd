@@ -1,0 +1,8 @@
+prefix=/home/turtlebot/andi_ws/devel
+
+Name: turtlebot_survivor
+Description: Description of turtlebot_survivor
+Version: 1.0.0
+Cflags: -I/home/turtlebot/andi_ws/devel/include
+Libs: -L/home/turtlebot/andi_ws/devel/lib -lturtlebot_survivor
+Requires: nodelet roscpp visualization_msgs turtlebot_msgs depth_image_proc dynamic_reconfigure
